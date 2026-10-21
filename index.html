@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Macumbê — vestimos sua fé. Camisetas com axé, identidade e ancestralidade.">
+<title>Macumbê | Vestimos sua fé</title>
+<style>
+:root{--bg:#0c0b0a;--panel:#171512;--gold:#d6b36a;--cream:#f5efe4;--muted:#bcb4a6;--line:#373027}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--cream);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}.topbar{background:var(--gold);color:#17120b;text-align:center;padding:9px 14px;font-size:12px;font-weight:700;letter-spacing:.08em}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px clamp(18px,6vw,80px);border-bottom:1px solid var(--line);gap:20px}
+.logo{font-family:Georgia,serif;font-size:30px;letter-spacing:.13em;font-weight:bold}.logo small{display:block;font:10px Arial,sans-serif;letter-spacing:.2em;margin-top:5px;text-align:center}
+nav{display:flex;gap:24px;font-size:13px;color:var(--muted)}nav a:hover{color:var(--gold)}.header-cta,.btn{display:inline-block;background:var(--gold);color:#16110a;padding:13px 18px;border-radius:3px;font-weight:700;font-size:13px;letter-spacing:.03em}
+.hero{min-height:470px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:30px;padding:65px clamp(18px,8vw,120px);background:radial-gradient(ellipse at 78% 45%,#3b2b18 0,transparent 42%),linear-gradient(120deg,#0c0b0a,#17130e)}
+.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.23em;text-transform:uppercase;font-weight:bold}.hero h1{font:clamp(42px,6vw,76px)/.98 Georgia,serif;margin:18px 0 22px;max-width:650px}.hero h1 em{color:var(--gold);font-weight:normal}.hero p{color:var(--muted);line-height:1.7;max-width:470px;font-size:15px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn-outline{display:inline-block;border:1px solid #78684b;padding:13px 18px;border-radius:3px;font-size:13px}
+.hero-art{position:relative;display:flex;align-items:center;justify-content:center;min-height:320px}.halo{width:min(100%,370px);aspect-ratio:1;border:1px solid #7c6239;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 0 90px #b58c3520}.hero-art img{width:75%;height:82%;object-fit:cover;border-radius:3px;filter:saturate(.85);box-shadow:0 20px 60px #0009}.hero-stamp{position:absolute;right:0;bottom:8%;background:var(--gold);color:#17110a;padding:15px 18px;font:italic 17px Georgia,serif;transform:rotate(-5deg)}
+section{padding:70px clamp(18px,7vw,100px)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:28px}.section-head h2{font:clamp(30px,4vw,44px) Georgia,serif;margin:9px 0 0}.section-head p{color:var(--muted);font-size:13px;max-width:350px;line-height:1.6}
+.filters{display:flex;gap:9px;flex-wrap:wrap;margin:0 0 24px}.filter{background:transparent;border:1px solid var(--line);color:var(--muted);padding:9px 13px;border-radius:2px;cursor:pointer}.filter.active,.filter:hover{border-color:var(--gold);color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.card{background:var(--panel);border:1px solid #29241d;overflow:hidden;display:flex;flex-direction:column}.product-image{aspect-ratio:4/4.7;background:#24201a;overflow:hidden;position:relative}.product-image img{width:100%;height:100%;object-fit:cover;transition:transform .4s}.card:hover .product-image img{transform:scale(1.04)}.tag{position:absolute;top:12px;left:12px;background:#0c0b0ae8;color:var(--gold);font-size:10px;letter-spacing:.1em;padding:7px 8px}.card-body{padding:16px;display:flex;flex-direction:column;flex:1}.card h3{font:20px Georgia,serif;margin:0 0 8px}.card p{font-size:12px;color:var(--muted);line-height:1.5;margin:0 0 15px}.price{color:var(--gold);font-weight:bold;font-size:15px;margin-top:auto;padding-bottom:14px}.card .btn{width:100%;text-align:center;padding:12px}
+.about{background:#15120e;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.about h2{font:clamp(32px,4vw,48px) Georgia,serif;margin:12px 0}.about p{color:var(--muted);line-height:1.8;font-size:14px}.values{display:grid;grid-template-columns:1fr 1fr;gap:12px}.value{border:1px solid var(--line);padding:20px}.value b{display:block;color:var(--gold);font:22px Georgia,serif;margin-bottom:7px}.value span{color:var(--muted);font-size:12px;line-height:1.5}
+.order{ text-align:center;background:radial-gradient(ellipse at center,#332514,#0c0b0a 65%)}.order h2{font:clamp(32px,4vw,48px) Georgia,serif;margin:12px 0}.order p{color:var(--muted);line-height:1.7;max-width:560px;margin:0 auto 25px}
+footer{border-top:1px solid var(--line);padding:28px clamp(18px,7vw,100px);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:var(--muted);font-size:12px}.footer-logo{color:var(--cream);letter-spacing:.12em;font-weight:bold}
+.notice{font-size:11px;color:#958a78;margin-top:18px}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr}.hero-art{min-height:280px}.hero{padding-top:45px}.about{grid-template-columns:1fr}}
+@media(max-width:560px){header{padding:17px;flex-wrap:wrap}.logo{font-size:25px}nav{order:3;width:100%;justify-content:space-between;gap:8px;font-size:12px}.header-cta{font-size:11px;padding:10px}.hero{padding:42px 20px}.hero-art{min-height:230px}.section-head{display:block}.section-head p{margin-top:12px}.grid{gap:10px}.card-body{padding:12px}.card h3{font-size:17px}.card p{font-size:11px}.card .btn{font-size:11px;padding:11px 6px}section{padding:52px 16px}.values{gap:8px}.value{padding:14px}footer{padding:24px 16px}}
+</style>
+</head>
+<body>
+<div class="topbar">AXÉ, IDENTIDADE E ANCESTRALIDADE — CAMISETAS QUE CONTAM HISTÓRIAS</div>
+<header>
+  <a class="logo" href="#" aria-label="Macumbê início"><img src="images/logo-macumbe.png" alt="Macumbê — Vestimos sua fé" style="display:block;width:170px;max-width:42vw;height:auto"></a>
+  <nav><a href="#colecao">Camisetas</a><a href="#marca">Nossa essência</a><a href="#pedidos">Como pedir</a></nav>
+  <a class="header-cta" href="https://wa.me/5511941555728?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Macumb%C3%AA%20e%20quero%20conhecer%20as%20camisetas." target="_blank" rel="noopener">Fale com a loja ↗</a>
+</header>
+<main>
+<section class="hero">
+ <div>
+  <div class="eyebrow">Moda com propósito • Feita para expressar</div>
+  <h1>Vista sua fé.<br><em>Honre suas raízes.</em></h1>
+  <p>Camisetas de axé que carregam identidade, força e ancestralidade. Encontre a estampa que fala com você — e chame a gente para confirmar tecido, tamanhos e valor.</p>
+  <div class="hero-actions"><a class="btn" href="#colecao">VER CAMISETAS</a><a class="btn-outline" href="https://wa.me/5511941555728?text=Ol%C3%A1%2C%20Macumb%C3%AA%21%20Quero%20ajuda%20para%20escolher%20uma%20camiseta." target="_blank" rel="noopener">Tirar dúvidas pelo WhatsApp</a></div>
+ </div>
+ <div class="hero-art"><div class="halo"><img src="images/produto-01.jpeg" alt="Camiseta preta de Xangô"></div><div class="hero-stamp">Carregue seu axé.</div></div>
+</section>
+<section id="colecao">
+ <div class="section-head"><div><div class="eyebrow">Escolha sua estampa</div><h2>Peças com presença.</h2></div><p>Os valores variam conforme a estampa, o modelo e o tecido. Consulte disponibilidade e preço pelo WhatsApp antes de fechar o pedido.</p></div>
+ <div class="filters"><button class="filter active" data-filter="todos">Todas as peças</button><button class="filter" data-filter="pretas">Camisetas pretas</button><button class="filter" data-filter="brancas">Camisetas claras</button><button class="filter" data-filter="estampas">Estampas em destaque</button></div>
+ <div class="grid" id="products"></div>
+ <p class="notice">As imagens recebidas incluem capturas de publicações. Para a versão final, recomendamos substituir por fotos originais e individuais de cada produto.</p>
+</section>
+<section class="about" id="marca">
+ <div><div class="eyebrow">Mais do que vestir</div><h2>Uma peça.<br>Uma história.<br>Um fundamento.</h2><p>A Macumbê celebra a expressão da fé e a riqueza das tradições afro-brasileiras por meio da moda. Cada estampa é uma forma de afirmar identidade, respeito e conexão com as próprias raízes.</p><p>Tem dúvida sobre tecido, tamanho ou uma estampa específica? Nosso atendimento é feito diretamente com você.</p></div>
+ <div class="values"><div class="value"><b>Axé</b><span>Vista aquilo que tem significado para você.</span></div><div class="value"><b>Identidade</b><span>Estampas que expressam personalidade.</span></div><div class="value"><b>Conexão</b><span>Atendimento próximo e humano.</span></div><div class="value"><b>Seu estilo</b><span>Consulte modelos e tamanhos disponíveis.</span></div></div>
+</section>
+<section class="order" id="pedidos"><div class="eyebrow">Pedido simples, atendimento direto</div><h2>Encontrou sua camiseta?</h2><p>Envie a estampa desejada pelo WhatsApp. A gente confirma o preço de acordo com o tecido e o modelo, além dos tamanhos disponíveis e das opções de entrega.</p><a class="btn" href="https://wa.me/5511941555728?text=Ol%C3%A1%2C%20Macumb%C3%AA%21%20Quero%20fazer%20um%20pedido.%20Pode%20me%20passar%20os%20pre%C3%A7os%20e%20tamanhos%20dispon%C3%ADveis%3F" target="_blank" rel="noopener">FAZER PEDIDO PELO WHATSAPP ↗</a></section>
+</main>
+<footer><div><div class="footer-logo">MACUMBÊ</div><div style="margin-top:7px">Vestimos sua fé.</div></div><div>Pedidos e dúvidas: (11) 94155-5728<br>© <span id="year"></span> Macumbê. Todos os direitos reservados.</div><div><a href="https://wa.me/5511941555728" target="_blank" rel="noopener">WhatsApp ↗</a></div></footer>
+<script>
+const items = [
+ {name:"Xangô — camiseta preta",desc:"Estampa de Xangô • consulte tecido e tamanho",img:"produto-01.jpeg",cat:"pretas",tag:"XANGÔ"},
+ {name:"Ogum — Patakori",desc:"Camiseta preta com estampa de Ogum",img:"produto-05.jpeg",cat:"pretas",tag:"OGUM"},
+ {name:"Laroyê — estampa preta",desc:"Arte Laroyê • consulte disponibilidade",img:"produto-03.jpeg",cat:"pretas",tag:"LAROYÊ"},
+ {name:"Laroyê — modelos",desc:"Modelos pretos com estampa Laroyê",img:"produto-04.jpeg",cat:"pretas",tag:"LAROYÊ"},
+ {name:"Camiseta branca estampada",desc:"Arte em camiseta clara • consulte tecido",img:"produto-06.jpeg",cat:"brancas",tag:"CLARA"},
+ {name:"Camiseta branca — coleção",desc:"Modelo claro com arte em destaque",img:"produto-07.jpeg",cat:"brancas",tag:"CLARA"},
+ {name:"Camiseta branca — outra estampa",desc:"Modelo claro • consulte tamanhos",img:"produto-08.jpeg",cat:"brancas",tag:"CLARA"},
+ {name:"Camisetas estampadas",desc:"Opções de estampas claras e escuras",img:"produto-09.jpeg",cat:"estampas",tag:"COLEÇÃO"},
+ {name:"Camiseta branca — arte verde",desc:"Estampa em tons verdes",img:"produto-10.jpeg",cat:"brancas",tag:"CLARA"},
+ {name:"Camiseta branca — arte colorida",desc:"Estampa colorida em camiseta clara",img:"produto-11.jpeg",cat:"brancas",tag:"CLARA"},
+ {name:"Modelos variados",desc:"Estampas em camisetas claras e pretas",img:"produto-12.jpeg",cat:"estampas",tag:"COLEÇÃO"},
+ {name:"Kit especial",desc:"Kit divulgado pela loja • consulte itens e preço",img:"produto-02.jpeg",cat:"estampas",tag:"KIT"}
+];
+const wa="https://wa.me/5511941555728?text=";
+function render(filter="todos"){
+ const root=document.getElementById("products");
+ root.innerHTML=items.filter(x=>filter==="todos"||x.cat===filter).map(x=>`<article class="card"><div class="product-image"><img loading="lazy" src="images/${x.img}" alt="${x.name}"><span class="tag">${x.tag}</span></div><div class="card-body"><h3>${x.name}</h3><p>${x.desc}</p><div class="price">Consulte o preço</div><a class="btn" target="_blank" rel="noopener" href="${wa+encodeURIComponent("Olá, Macumbê! Tenho interesse em: "+x.name+". Pode me informar o preço, tecidos e tamanhos disponíveis?")}">CONSULTAR NO WHATSAPP</a></div></article>`).join("");
+}
+document.querySelectorAll(".filter").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));b.classList.add("active");render(b.dataset.filter)}));
+document.getElementById("year").textContent=new Date().getFullYear();render();
+</script>
+</body>
+</html>

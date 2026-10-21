@@ -1,0 +1,22 @@
+MACUMBÊ — SITE INICIAL
+======================
+
+O que está incluído:
+- index.html: página da loja.
+- images/: imagens de produtos e logotipo criado para a Macumbê.
+
+Para visualizar:
+1. Extraia o arquivo ZIP.
+2. Abra a pasta macumbe_site.
+3. Abra index.html no navegador.
+
+O catálogo encaminha os pedidos para o WhatsApp informado e mostra "Consulte o preço", pois os valores variam conforme estampa e tecido.
+
+PUBLICAÇÃO GRATUITA:
+Você pode publicar usando um serviço de hospedagem estática gratuito, como GitHub Pages ou Netlify. É necessário criar/usar uma conta e enviar os arquivos do site. O site ainda não está publicado na internet; este ZIP é a versão para visualizar e publicar.
+
+Antes de divulgar:
+- Confira o número do WhatsApp.
+- Confira as imagens e os nomes de cada produto.
+- Substitua capturas de tela por fotos individuais dos produtos, quando possível.
+- Confirme preços, tecidos, tamanhos, entrega e política de troca.
